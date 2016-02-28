@@ -1,0 +1,17 @@
+language: php
+install: true
+script: true
+deploy:
+  provider: s3
+  skip_cleanup: true
+  access_key_id: $AWS_ACCESS_ID
+  secret_access_key: $AWS_SECRET_KEY
+  bucket: tampoon.net
+  region: us-west-2
+  endpoint: http://tampoon.net.s3-website-us-west-2.amazonaws.com/
+  acl: public_read
+  on:
+    repo: presteege/tampoon.net
+notifications:
+  email:
+    on_failure: always

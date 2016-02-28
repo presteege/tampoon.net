@@ -1,4 +1,4 @@
 ------- [ http://tampoon.net ] -------
 
-- hosted on AWS EC2
+- hosted on AWS s3 (using travis-ci to deploy)
 - domain name at gandi.net
